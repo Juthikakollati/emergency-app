@@ -1,15 +1,26 @@
-<!DOCTYPE html>
 
-<html>
+  <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>EMERGENCY HELP APP</title>
-  <link rel='stylesheet' href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Assistant</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-  
 <body>
-  <h1> 🚨 EMERGNCY HELP </h1>
-  <button onclick="sendAlert()">EMERGENCY</button>
-  <p id="status"></p>
+
+  <div class="container">
+    <h1>🚨 Smart Emergency Assistant</h1>
+
+    <p id="status">Press the button in case of emergency</p>
+
+    <button onclick="triggerEmergency()" id="emergencyBtn">
+      EMERGENCY HELP
+    </button>
+
+    <div id="output"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
-<html>
+</html>
